@@ -1,0 +1,39 @@
+
+.box{
+    position:relative;
+}
+.ani-box{
+    color:white;
+    position:absolute;
+    padding:48px 76px 48px 64px;
+    top:8px;
+    left:280px;
+    background-color: rgba(0, 0, 0, 0.486);
+    visibility:hidden;
+}
+.hide:hover .ani-box{
+    visibility:visible;
+    animation-name:slide;
+    animation-duration: 3s;
+    outline:2px solid white;
+}
+@keyframes slide {
+    from{
+        padding:48px 0 48px 0;
+    }
+    to{
+        padding:48px 76px 48px 64px;
+    }
+}
+.big-block{
+    animation-name:big;
+    animation-duration: 2s;
+}
+@keyframes big {
+    form{
+        width:0;
+    }
+    to{
+        width: 100%;
+    }
+}
